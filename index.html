@@ -42,51 +42,50 @@
                 <div class="card-body">
                   <h5 class="card-title">Click on buttons below to create a new password</h5>
                 </div>
-                <img id="about-img" src="./assets/pic.jpg" alt="Card image">
+                <!-- <img id="about-img" src="./assets/pic.jpg" alt="Card image"> -->
+                <textarea class="form-control" id="exampleTextarea" rows="7"></textarea>
                 <div class="card-body">
-                  <p class="card-text">Make sure to select at least one of the criterias available.</p>
+                  <p id="gen-card-subtxt" class="card-text">Make sure to select at least one of the criterias available.</p>
                 </div>
-                <ul class="list-group list-group-flush">
+                <ul id="gen-list-group" class="list-group list-group-flush">
 
-                  <li class="list-group-item">
-                    <div id="list-chkbox-row-title" class="list-chkbox-row">
+                  <li id="title-list-group-item" class="list-group-item">
+                    <div id="list-title" class="list-chkbox-row">
                       <h5>Password Criteria</h5>
                     </div>
+                  </li>
                   
-                  <li id="gen-list-group-item" class="list-group-item">
+                  <li class="list-group-item">
                     <div class="list-chkbox-row">
-                        <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="customCheck1" checked=""><label class="custom-control-label" for="customCheck1">Include Uppercase Letters</label></div>
+                        <div id="upp-chkbox" class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="up-chk" checked=""><label class="custom-control-label" for="up-chk">Include Uppercase Letters</label></div>
                     </div>
-
                   </li>
                   
                   <li class="list-group-item">
                     <div class="list-chkbox-row">
-                        <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="customCheck1" checked=""><label class="custom-control-label" for="customCheck1">Include Lowercase Letters</label></div>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="low-chk" checked="">
+                          <label class="custom-control-label" for="low-chk">Include Lowercase Letters</label>
+                        </div>
                     </div>  
                   </li>
 
                   <li class="list-group-item">
                     <div class="list-chkbox-row">
-                        <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="customCheck1" checked=""><label class="custom-control-label" for="customCheck1">Include Numbers</label></div>
+                        <div id="num-chkbox" class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="num-chk" checked=""><label class="custom-control-label" for="num-chk">Include Numbers</label></div>
                     </div>  
                   </li>
                   
                   <li class="list-group-item">
                     <div class="list-chkbox-row">
-                        <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="customCheck1" checked=""><label class="custom-control-label" for="customCheck1">Include Special Characters</label></div>
+                        <div id="num-chkbox" class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="spec-chk" checked=""><label class="custom-control-label" for="spec-chk">Include Special Characters</label></div>
                     </div>  
                   </li>
-
-
-
                 </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
+
                 <div class="card-footer text-muted">
-                  2 days ago
+                  <span id="gen-ctrl-1" class="btn btn-primary">Generate</span>
+                  <span id="gen-ctrl-2" class="btn btn-secondary">Cleanup</span>
                 </div>
               </div>
             </div>

@@ -12,6 +12,10 @@
     margin-left: 0px;
 }
 
+#list-title,
+.card-title {
+    margin-bottom: 0px;
+}
 
 #about-body-row-bottom {
     padding: 4rem;
@@ -29,8 +33,6 @@
 .list-chkbox-row {
     text-align: right;
 }
-
-
 
 .sf-container {
     padding-right: 1rem;
