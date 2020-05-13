@@ -12,15 +12,11 @@
     margin-left: 0px;
 }
 
-#list-title,
-.card-title {
-    margin-bottom: 0px;
-}
-
 #about-body-row-bottom {
     padding: 4rem;
 }
 
+#passwordArea,
 #about-img {
     width: 100%;
     object-fit: cover;
@@ -28,6 +24,10 @@
 
 #list-chkbox-row-title {
     margin-bottom: 0rem;
+}
+
+#lenght-textbox {
+    text-align: left;
 }
 
 .list-chkbox-row {
