@@ -12,6 +12,7 @@
     margin-left: 0px;
 }
 
+
 #about-body-row-bottom {
     padding: 4rem;
 }
@@ -20,6 +21,16 @@
     width: 100%;
     object-fit: cover;
 }
+
+#list-chkbox-row-title {
+    margin-bottom: 0rem;
+}
+
+.list-chkbox-row {
+    text-align: right;
+}
+
+
 
 .sf-container {
     padding-right: 1rem;
