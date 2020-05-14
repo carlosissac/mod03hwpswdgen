@@ -44,8 +44,7 @@
                 </div>
                 <textarea class="form-control" id="passwordArea" rows="7" placeholder="New password" readonly></textarea>
                 <div class="card-body">
-                  <p id="gen-card-subtxt" class="card-text">Make sure to select at least one of the criterias available.</p>
-                  <p id="gen-card-subtxt" class="card-text">Password lenght can be ONLY be between 8 and 128 characters.</p>
+                  <p id="gen-card-subtxt" class="card-text text-muted">For how to use go to the About page.</p>
                 </div>
                 <ul id="gen-list-group" class="list-group list-group-flush">
 
@@ -58,44 +57,39 @@
                   <li class="list-group-item">
                     <div id="lenght-textbox" class="list-chkbox-row">
                       <div>
-                       <label class="col-form-label" for="inputDefault">Password Lenght (8-128):</label>
-                      <input type="text" class="form-control" placeholder="" id="inputDefault">
-                      
-                    </div>  
+                        <label class="col-form-label" for="len-textbox">Password Lenght (8-128):</label>
+                        <input type="text" class="form-control" placeholder="lenght" id="len-textbox">   
+                      </div>  
                     </div>  
 
                   <li class="list-group-item">
                     <div class="list-chkbox-row">
-                        <div id="upp-chkbox" class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="up-chk" checked=""><label class="custom-control-label" for="up-chk">Include Uppercase Letters</label></div>
+                        <div id="upp-chkbox" class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="up-chk"><label class="custom-control-label" for="up-chk">Include Uppercase Letters</label></div>
                     </div>
                   </li>
                   
                   <li class="list-group-item">
                     <div class="list-chkbox-row">
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="low-chk" checked="">
-                          <label class="custom-control-label" for="low-chk">Include Lowercase Letters</label>
-                        </div>
-                    </div>  
+                        <div id="low-chkbox" class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="low-chk"><label class="custom-control-label" for="low-chk">Include Lowercase Letters</label></div>
+                    </div>
                   </li>
 
                   <li class="list-group-item">
                     <div class="list-chkbox-row">
-                        <div id="num-chkbox" class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="num-chk" checked=""><label class="custom-control-label" for="num-chk">Include Numbers</label></div>
+                        <div id="num-chkbox" class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="num-chk"><label class="custom-control-label" for="num-chk">Include Numbers</label></div>
                     </div>  
                   </li>
                   
                   <li class="list-group-item">
                     <div class="list-chkbox-row">
-                        <div id="num-chkbox" class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="spec-chk" checked=""><label class="custom-control-label" for="spec-chk">Include Special Characters</label></div>
+                        <div id="spec-chkbox" class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="spec-chk"><label class="custom-control-label" for="spec-chk">Include Special Characters</label></div>
                     </div>  
                   </li>
-
                 </ul>
 
                 <div class="card-footer text-muted">
-                  <span id="gen-ctrl-1" class="btn btn-primary">Generate</span>
-                  <span id="gen-ctrl-2" class="btn btn-secondary">Cleanup</span>
+                  <span id="gen-btn" class="btn btn-primary">Generate</span>
+                  <span id="reset-btn" class="btn btn-secondary">Reset</span>
                 </div>
               </div>
             </div>
@@ -113,5 +107,8 @@
         </div>
     </footer>
     <!-- STICKY FOOTER END -->
+    <!-- JS SCRIPT LINKAGE -->
+    <script src="./assets/script.js"></script>
+    <!-- JS SCRIPT LINKAGE -->
   </body>
 </html>
