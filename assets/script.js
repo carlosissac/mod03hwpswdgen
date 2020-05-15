@@ -168,7 +168,7 @@ function copyTxtArea() {
   if(lock) {
     psswdArea.select();
     document.execCommand('copy');
-    alert("Copied to clipboard");
+    alert("New Password Copied to Clipboard");
   }
 
 }
