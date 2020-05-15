@@ -11,6 +11,8 @@ genBtn.addEventListener("click", genPsswd);
 resetBtn.addEventListener("click", resetForm);
 psswdArea.addEventListener("click", copyTxtArea);
 
+var lock = false;
+
 var generator = {
   "uppcase_val": false,
   "lowcase_val": false,
@@ -145,7 +147,11 @@ function genPsswd() {
   gen1.readValuesUI();
   if(!gen1.validateInput()) {
         gen1.generatePassword();
+        lock = true;
     }
+  else {
+    lock = false;
+  }
   delete gen1;
 }
 
@@ -154,10 +160,15 @@ function resetForm() {
   gen2.cleanUI();
   psswdArea.style.color = "black";
   psswdArea.value="";
+  lock = false;
   delete gen2;
 }
 
 function copyTxtArea() {
-  psswdArea.select();
-  document.execCommand('copy');
+  if(lock) {
+    psswdArea.select();
+    document.execCommand('copy');
+    alert("Copied to clipboard");
+  }
+
 }
