@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Generator</title>
+    <title>Pswd Gen</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/united/bootstrap.min.css"> 
     <!-- FONTAWESOME LINKAGE -->    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
@@ -17,12 +17,12 @@
 <body>
   <!-- NAVBAR START -->
    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand mr-auto"><i class="fas fa-code"></i> Password Generator</a>
+    <a class="navbar-brand mr-auto" href="index.html"><i class="fas fa-code"></i> Pswd Gen</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Password Generator</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">New Password App</a></li>
         <li class="nav-item active"><a class="nav-link">About<span class="sr-only">(current)</span></a></li>
       </ul>
     </div>
@@ -34,7 +34,7 @@
         <div id="about-body-row-top" class="row"></div>
         <div id="about-body-row-main" class="row">
             <div id="about-card-area-left" class="col-lg-1"></div>
-            <div id="about-card-area-center" class="col-lg-4">
+            <div id="about-card-area-center" class="col-lg-3">
               <div class="card mb-3">
                 <h3 class="card-header">About</h3>
                 <div class="card-body">
@@ -45,24 +45,24 @@
                   <img id="about-img" src="./assets/pic.jpg" alt="Card image">
                 </a>
                 <div class="card-body">
-                  <h5 id="gen-card-subtxt" class="card-text">How To Use:</h5>
-                  <ul>
-                  <li id="gen-card-subtxt" class="card-text text-muted">Click <a style="color:#E95420;">Generate</a> to get a new password.</li>
-                  <li id="gen-card-subtxt" class="card-text text-muted">Click <a style="color:#E95420;">Cleanup</a> to reset form.</li>
-                  <li id="gen-card-subtxt" class="card-text text-muted">Make sure to select at least <a style="color:#E95420;">One</a> of the criterias available.</li>
-                  <li id="gen-card-subtxt" class="card-text text-muted">Password lenght can be <a style="color:#E95420;">Only</a> be between 8 and 128 characters.</li>
-                  <li id="gen-card-subtxt" class="card-text text-muted"><a style="color:#E95420;">Click</a> on Password to copy to clipboard</li>
+                <h5 id="about-card-subtxt" class="card-text">How To Use:</h5>
+                <ul id="about-card-list-subtxt">
+                  <li id="about-card-subtxt" class="card-text text-muted">New id length can <a style="color:#E95420;">Only</a> be between 8 and 128 characters.</li>
+                  <li id="about-card-subtxt" class="card-text text-muted">Make sure to select at least <a style="color:#E95420;">One</a> of the criterias available.</li>
+                  <li id="about-card-subtxt" class="card-text text-muted">Click <a style="color:#E95420;">Generate</a> to create a new password.</li>
+                  <li id="about-card-subtxt" class="card-text text-muted">Click <a style="color:#E95420;">Cleanup</a> to reset form.</li>
+                  <li id="about-card-subtxt" class="card-text text-muted"><a style="color:#E95420;">Click</a> on displayed codeword to copy to clipboard</li>
                 </ul>
                 </div>
-                <ul id="gen-list-group" class="list-group list-group-flush">
-                  <li id="about-list-top" class="list-group-item">Picture included in order to confirm site responsiveness to different screen sizes.</li>
-                  <li id="about-list-bottom" class="list-group-item">Image has a link to my personal social media.</li>
+                <ul id="about-list-group" class="list-group list-group-flush">
+                  <li id="about-list-top" class="list-group-item">Picture was included in order to confirm site responsiveness to different screen sizes.</li>
+                  <li id="about-list-bottom" class="list-group-item">Image has a link to my personal social media embedded.</li>
                 </ul>
-                <div class="card-body">
+                <div id="about-link-row" class="card-body">
                   <a target="_blank" href="https://github.com/carlosissac/mod03hwpswdgen" class="card-link">GitHub Repo</a>
                   <a target="_blank" href="https://bootswatch.com/united/" class="card-link">Bootstrap Theme</a>
                 </div>
-                <div class="card-footer text-muted">
+                <div id="about-timestamp-lbl" class="card-footer text-muted">
                   May 2020, G877+4R Portland, Oregon
                 </div>
               </div>

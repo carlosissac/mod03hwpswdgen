@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Generator</title>
+    <title>Pswd Gen</title>
     <!-- BOOTSTRAP LINKAGE https://www.bootstrapcdn.com/bootswatch/ -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/united/bootstrap.min.css"> 
     <!-- FONTAWESOME LINKAGE -->    
@@ -19,12 +19,12 @@
 
   <!-- NAVBAR START -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand mr-auto"><i class="fas fa-code"></i> Password Generator</a>
+    <a class="navbar-brand mr-auto" href="index.html"><i class="fas fa-code"></i> Pswd Gen</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active"><a class="nav-link">Password Generator<span class="sr-only">(current)</span></a></li>
+        <li class="nav-item active"><a class="nav-link">New Password App<span class="sr-only">(current)</span></a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
       </ul>
     </div>
@@ -36,47 +36,47 @@
         <div id="about-body-row-top" class="row"></div>
         <div id="about-body-row-main" class="row">
             <div id="about-card-area-left" class="col-lg-1"></div>
-            <div id="about-card-area-center" class="col-lg-4">
+            <div id="about-card-area-center" class="col-lg-3">
               <div class="card mb-3">
-                <h3 id="gen-card-header" class="card-header">Generate a Password</h3>
+                <h3 id="gen-card-header" class="card-header">New Password App</h3>
                 <div class="card-body">
-                  <h5 id="gen-card-title" class="card-title">Click on buttons below to create a new password</h5>
+                  <h5 id="gen-card-title" class="card-title"><a style="color:#E95420;">Click</a> on controls below to create a new unique id.</h5>
                 </div>
                 <textarea class="form-control" id="passwordArea" rows="4" placeholder="New password" readonly></textarea>
                 <div id="small-body-text" class="card-body">
-                  <small id="gen-card-subtxt" class="card-text text-muted">For details on how to use go to the <a href="about.html">About</a> page.</small>
+                  <small id="gen-card-subtxt" class="card-text text-muted">For detailed instructions on how to use go to the <a href="about.html">About</a> page.</small>
                 </div>
                 <ul id="gen-list-group" class="list-group list-group-flush">
                   <li id="title-list-group-item" class="list-group-item">
                     <div id="list-title" class="list-chkbox-row">
-                      <h5 id="gen-list-title">Password Criteria</h5>
+                      <h5 id="gen-list-title" style="color:#E95420;">Password Criteria</h5>
                     </div>
                   </li>
-                  <li class="list-group-item">
-                    <div id="length-textbox" class="list-chkbox-row">
+                  <li id="list-group-item-1" class="list-group-item">
+                    <div id="length-textbox-row" class="list-chkbox-row">
                       <div>
-                        <label class="col-form-label" for="len-textbox">Password length (8-128) : </label>
-                        <input type="text" class="form-control" placeholder="length" id="len-textbox">   
+                        <label class="col-form-label" for="length-textbox">Length : </label>
+                        <input type="text" class="form-control" placeholder="8-128 Characters" id="length-textbox">   
                       </div>  
                     </div>  
-                  <li class="list-group-item">
-                    <div class="list-chkbox-row">
-                        <div id="upp-chkbox" class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="up-chk"><label class="custom-control-label" for="up-chk">Include Uppercase Letters</label></div>
+                  <li id="list-group-item-2" class="list-group-item">
+                    <div id="list-chkbox-row-1" class="list-chkbox-row">
+                        <div id="upp-chkbox" class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="up-chk"><label class="custom-control-label" for="up-chk">w. Uppercase Letters</label></div>
                     </div>
                   </li>
-                  <li class="list-group-item">
-                    <div class="list-chkbox-row">
-                        <div id="low-chkbox" class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="low-chk"><label class="custom-control-label" for="low-chk">Include Lowercase Letters</label></div>
+                  <li id="list-group-item-3" class="list-group-item">
+                    <div id="list-chkbox-row-2" class="list-chkbox-row">
+                        <div id="low-chkbox" class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="low-chk"><label class="custom-control-label" for="low-chk">w. Lowercase Letters</label></div>
                     </div>
                   </li>
-                  <li class="list-group-item">
-                    <div class="list-chkbox-row">
-                        <div id="num-chkbox" class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="num-chk"><label class="custom-control-label" for="num-chk">Include Numbers</label></div>
+                  <li id="list-group-item-4" class="list-group-item">
+                    <div id="list-chkbox-row-3" class="list-chkbox-row">
+                        <div id="num-chkbox" class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="num-chk"><label class="custom-control-label" for="num-chk">w. Numbers</label></div>
                     </div>  
                   </li>
-                  <li class="list-group-item">
-                    <div class="list-chkbox-row">
-                        <div id="spec-chkbox" class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="spec-chk"><label class="custom-control-label" for="spec-chk">Include Special Characters</label></div>
+                  <li id="list-group-item-5" class="list-group-item">
+                    <div id="list-chkbox-row-4" class="list-chkbox-row">
+                        <div id="spec-chkbox" class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="spec-chk"><label class="custom-control-label" for="spec-chk">w. Special Characters</label></div>
                     </div>  
                   </li>
                 </ul>

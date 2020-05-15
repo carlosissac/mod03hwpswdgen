@@ -4,7 +4,7 @@ var uppCB = document.querySelector("#up-chk");
 var lowCB = document.querySelector("#low-chk");
 var numCB = document.querySelector("#num-chk");
 var specCB = document.querySelector("#spec-chk");
-var lenTB = document.querySelector("#len-textbox");
+var lenTB = document.querySelector("#length-textbox");
 var psswdArea = document.querySelector("#passwordArea");
 
 genBtn.addEventListener("click", genPsswd);
@@ -50,33 +50,33 @@ var generator = {
                   }
                 }
               else {
-                //LENGHT IS OUT OF RANGE
+                //LENGTH IS OUT OF RANGE
                 psswdArea.style.color = "red";
-                psswdArea.value="PASSWORD LENGTH HAS INVALID RANGE";
+                psswdArea.value="LENGTH HAS INVALID RANGE";
                 this.cleanUI();
                 return 1;         
               }
             }
             else {
-              //LENGHT IS NOT AN INTEGER
+              //LENGTH IS NOT AN INTEGER
               psswdArea.style.color = "red";
-              psswdArea.value="PASSWORD LENGTH IS INVALID";
+              psswdArea.value="LENGTH IS INVALID";
               this.cleanUI();
               return 1;         
             }
           }
           else {
-            //LENGHT IS NOT A NUMBER
+            //LENGTH IS NOT A NUMBER
             psswdArea.style.color = "red";
-            psswdArea.value="PASSWORD LENGTH IS INVALID";
+            psswdArea.value="LENGTH IS INVALID";
             this.cleanUI();
             return 1;         
           }
       }
       else {
-        //LENGHT IS EMPTY
+        //LENGTH IS EMPTY
         psswdArea.style.color = "red";
-        psswdArea.value="PASSWORD LENGTH IS NOT SPECIFIED";
+        psswdArea.value="LENGTH IS NOT SPECIFIED";
         this.cleanUI();
         return 1;
       } 

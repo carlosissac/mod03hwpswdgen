@@ -15,8 +15,15 @@
 #about-list-top,
 #title-list-group-item {
     border-top-width: 1px;
+    border-bottom-width: 1px;
 }
 
+#list-group-item-2,
+#list-group-item-3,
+#list-group-item-4 {
+    border-bottom-width: 0px;
+
+}
 #gen-card-title {
     margin-bottom: 0rem;
 }
@@ -31,21 +38,29 @@
     padding: 0.75rem;
 }
 
+#about-card-list-subtxt {
+    margin-bottom: 0rem;
+    padding-inline-start: 1.2rem;
+}
+
 #gen-list-title {
     margin-bottom: 0px;
 }
 
+#length-textbox,
 #list-title {
     text-align: left;
 }
 
-#length-textbox {
+#about-list-group,
+#about-link-row,
+#about-timestamp-lbl {
     text-align: right;
 }
 
-#len-textbox{
+#length-textbox{
     display: inline-block;
-    width: 35%;
+    width: 60%;
 }
 
 .list-chkbox-row {
