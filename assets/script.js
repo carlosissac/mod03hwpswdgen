@@ -9,6 +9,7 @@ var psswdArea = document.querySelector("#passwordArea");
 
 genBtn.addEventListener("click", genPsswd);
 resetBtn.addEventListener("click", resetForm);
+psswdArea.addEventListener("click", copyTxtArea);
 
 var generator = {
   "uppcase_val": false,
@@ -41,6 +42,7 @@ var generator = {
                 chk = Number(this.uppcase_val) + Number(this.lowcase_val) + Number(this.num_val) + Number(this.spec_val);
                 if(chk) { return 0; }
                 else {
+                    //NO CRITERIA IS SELECTED
                     psswdArea.style.color = "red";
                     psswdArea.value="ONE CRITERIA NEEDS TO BE SELECTED";
                     this.cleanUI();
@@ -48,74 +50,82 @@ var generator = {
                   }
                 }
               else {
+                //LENGHT IS OUT OF RANGE
                 psswdArea.style.color = "red";
-                psswdArea.value="PASSWORD LENGHT HAS INVALID RANGE";
+                psswdArea.value="PASSWORD LENGTH HAS INVALID RANGE";
                 this.cleanUI();
                 return 1;         
               }
             }
             else {
+              //LENGHT IS NOT AN INTEGER
               psswdArea.style.color = "red";
-              psswdArea.value="PASSWORD LENGHT IS INVALID";
+              psswdArea.value="PASSWORD LENGTH IS INVALID";
               this.cleanUI();
               return 1;         
             }
           }
           else {
+            //LENGHT IS NOT A NUMBER
             psswdArea.style.color = "red";
-            psswdArea.value="PASSWORD LENGHT IS INVALID";
+            psswdArea.value="PASSWORD LENGTH IS INVALID";
             this.cleanUI();
             return 1;         
           }
       }
       else {
+        //LENGHT IS EMPTY
         psswdArea.style.color = "red";
-        psswdArea.value="PASSWORD LENGHT IS NOT SPECIFIED";
+        psswdArea.value="PASSWORD LENGTH IS NOT SPECIFIED";
         this.cleanUI();
         return 1;
       } 
     },
   getRandUppCase: function() {
-      console.log("UPPCASE RANDOM");
+    //ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    return String.fromCharCode(Math.floor(Math.random()*26)+65);
   },
   getRandLowCase: function() {
-    console.log("LOWCASE RANDOM");
+    //abcdefghijklmnopqrstuvwxyz
+    return String.fromCharCode(Math.floor(Math.random()*26)+97);
   },
   getRandNum: function() {
-    console.log("NUMBER RANDOM");
+    //0123456789
+    return String.fromCharCode(Math.floor(Math.random()*10)+48);
   },
   getRandSpec: function() {
-    console.log("SPECIAL RANDOM");
+    //used example https://www.owasp.org/index.php/Password_special_characters
+    const spec = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+    return spec[Math.floor((Math.random()*spec.length))];
   },
-
   generatePassword: function() {
     let i=0;
     let j=0;
+    let buffer = '';
     while(i<this.pass_lenght) {
       j=Math.floor(Math.random()*4);
-      console.log(j);
       switch(j) {
         case 0:
           if(this.uppcase_val) {
-            this.getRandUppCase();
+            buffer+=this.getRandUppCase();
             i++;
           }
         break;
         case 1:
           if(this.lowcase_val) {
-            this.getRandLowCase();
+            buffer+=this.getRandLowCase();
             i++;
           }
         break;
         case 2:
           if(this.num_val) {
-            this.getRandNum();
+            buffer+=this.getRandNum();
             i++;
           }
         break;
         case 3:
           if(this.spec_val) {
-            this.getRandSpec();
+            buffer+=this.getRandSpec();
             i++;
           }
         break;
@@ -124,8 +134,8 @@ var generator = {
         break;
       } 
     }
-    
-    alert("GENERATEEEEEEEE!!!!!!");
+    psswdArea.style.color = "black";
+    psswdArea.value = buffer;
     return 0;
   }
 };
@@ -142,7 +152,12 @@ function genPsswd() {
 function resetForm() {
   var gen2 = Object.create(generator);
   gen2.cleanUI();
+  psswdArea.style.color = "black";
   psswdArea.value="";
   delete gen2;
 }
 
+function copyTxtArea() {
+  psswdArea.select();
+  document.execCommand('copy');
+}
