@@ -12,6 +12,7 @@
     margin-left: 0px;
 }
 
+#about-list-top,
 #title-list-group-item {
     border-top-width: 1px;
 }
@@ -47,7 +48,6 @@
     width: 35%;
 }
 
-/*#btn-card-row,*/
 .list-chkbox-row {
     text-align: right;
 }
