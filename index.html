@@ -36,28 +36,28 @@
         <div id="about-body-row-top" class="row"></div>
         <div id="about-body-row-main" class="row">
             <div id="about-card-area-left" class="col-lg-1"></div>
-            <div id="about-card-area-center" class="col-lg-5">
+            <div id="about-card-area-center" class="col-lg-4">
               <div class="card mb-3">
-                <h3 class="card-header">Generate a Password</h3>
+                <h3 id="gen-card-header" class="card-header">Generate a Password</h3>
                 <div class="card-body">
-                  <h5 class="card-title">Click on buttons below to create a new password</h5>
+                  <h5 id="gen-card-title" class="card-title">Click on buttons below to create a new password</h5>
                 </div>
-                <textarea class="form-control" id="passwordArea" rows="5" placeholder="New password" readonly></textarea>
-                <div class="card-body">
-                  <p id="gen-card-subtxt" class="card-text text-muted">For how to use go to the About page.</p>
+                <textarea class="form-control" id="passwordArea" rows="4" placeholder="New password" readonly></textarea>
+                <div id="small-body-text" class="card-body">
+                  <small id="gen-card-subtxt" class="card-text text-muted">For details on how to use go to the About page.</small>
                 </div>
                 <ul id="gen-list-group" class="list-group list-group-flush">
 
                   <li id="title-list-group-item" class="list-group-item">
                     <div id="list-title" class="list-chkbox-row">
-                      <h5>Password Criteria</h5>
+                      <h5 id="gen-list-title">Password Criteria</h5>
                     </div>
                   </li>
 
                   <li class="list-group-item">
                     <div id="length-textbox" class="list-chkbox-row">
                       <div>
-                        <label class="col-form-label" for="len-textbox">Password length (8-128):</label>
+                        <label class="col-form-label" for="len-textbox">Password length (8-128) : </label>
                         <input type="text" class="form-control" placeholder="length" id="len-textbox">   
                       </div>  
                     </div>  
@@ -87,11 +87,13 @@
                   </li>
                 </ul>
 
-                <div class="card-footer text-muted">
-                  <a href="#passwordArea">
+                <div id="btn-card-row" class="card-footer text-muted">
+                  <!-- <a href="#passwordArea">  -->
+                    <a href="#about-body-row-top">
                     <span id="gen-btn" class="btn btn-primary">Generate</span>
                   </a>
-                  <a href="#passwordArea">
+                  <!-- <a href="#passwordArea"> -->
+                    <a href="#about-body-row-top"></a>
                     <span id="reset-btn" class="btn btn-secondary">Reset</span>
                   </a>
                 </div>

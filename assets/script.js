@@ -94,7 +94,7 @@ var generator = {
     return String.fromCharCode(Math.floor(Math.random()*10)+48);
   },
   getRandSpec: function() {
-    //used example https://www.owasp.org/index.php/Password_special_characters
+    //used example from https://www.owasp.org/index.php/Password_special_characters
     const spec = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
     return spec[Math.floor((Math.random()*spec.length))];
   },

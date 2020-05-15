@@ -12,8 +12,12 @@
     margin-left: 0px;
 }
 
-#about-body-row-bottom {
-    padding: 4rem;
+#title-list-group-item {
+    border-top-width: 1px;
+}
+
+#gen-card-title {
+    margin-bottom: 0rem;
 }
 
 #passwordArea,
@@ -22,14 +26,28 @@
     object-fit: cover;
 }
 
-#list-chkbox-row-title {
-    margin-bottom: 0rem;
+#small-body-text {
+    padding: 0.75rem;
 }
 
-#lenght-textbox {
+#gen-list-title {
+    margin-bottom: 0px;
+}
+
+#list-title {
     text-align: left;
 }
 
+#length-textbox {
+    text-align: right;
+}
+
+#len-textbox{
+    display: inline-block;
+    width: 35%;
+}
+
+/*#btn-card-row,*/
 .list-chkbox-row {
     text-align: right;
 }
@@ -50,17 +68,34 @@
     padding: 0px;
   }
   
+  
+@media (min-width: 320px) {  
+
+    #about-body-row-top {
+        padding: 0.5rem;
+    }
+    #about-body-row-bottom {
+        padding: 0.5rem;
+    }
+}
+
 @media (min-width: 576px) {  
 
     #about-body-row-top {
-        padding: 0rem;
+        padding: 0.5rem;
+    }
+    #about-body-row-bottom {
+        padding: 4rem;
     }
 }
 
 @media (min-width: 768px) {  
 
     #about-body-row-top {
-        padding: 0rem;
+        padding: 0.5rem;
+    }
+    #about-body-row-bottom {
+        padding: 4rem;
     }
 }
 
@@ -69,6 +104,9 @@
     #about-body-row-top {
         padding: 1rem;
     }
+    #about-body-row-bottom {
+        padding: 4rem;
+    }
 }
 
 @media (min-width: 1200px) {  
@@ -76,6 +114,8 @@
     #about-body-row-top {
         padding: 1rem;
     }
-
+    #about-body-row-bottom {
+        padding: 4rem;
+    }
 }
     
