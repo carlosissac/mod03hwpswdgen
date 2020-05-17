@@ -125,7 +125,7 @@ var generator = {
             i++;
           }
         break;
-        case 3:generating
+        case 3:
           if(this.spec_val) {
             buffer+=this.getRandSpec();
             i++;
