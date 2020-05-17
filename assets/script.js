@@ -144,13 +144,14 @@ var generator = {
 
 function genPsswd() {
   var gen1 = Object.create(generator);
-  gen1.readValuesUI();
-  if(!gen1.validateInput()) {
-        gen1.generatePassword();
-        lock = true;
+  if(!gen1.readValuesUI()) {
+    if(!gen1.validateInput()) {
+          gen1.generatePassword();
+          lock = true;
+      }
+    else {
+      lock = false;
     }
-  else {
-    lock = false;
   }
   delete gen1;
 }
