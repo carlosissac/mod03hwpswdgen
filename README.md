@@ -19,52 +19,43 @@ The following section takes the requirements provided in the homework assignment
 #### 1.2.1 Initial Criteria.
 
 * Create an application that generates a random password based on user-selected criteria. 
---- Done --- Issac.
+    * Done --- Issac.
 
 * This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes. 
---- Done --- Issac.
+    * Done --- Issac.
 
 #### 1.2.2. Detailed Acceptance Criteria.
 
-* GIVEN I need a new, secure password:
+GIVEN I need a new, secure password:
 
 * WHEN I click the button to generate a password, THEN I am presented with a series of prompts for password criteria. 
-
-- Criteria is displayed in the main UI instead of using basic javascript prompts. --- Done --- Issac.
+    * Criteria is displayed in the main UI instead of using basic javascript prompts. --- Done --- Issac.
 
 * WHEN prompted for password criteria, THEN I select which criteria to include in the password. 
-
-- Checkboxes provided in the UI give a more intuitive usage for the user when selecting which criteria to include. --- Done --- Issac.
+    * Checkboxes provided in the UI give a more intuitive usage for the user when selecting which criteria to include. --- Done --- Issac.
 
 * WHEN prompted for the length of the password, THEN I choose a length of at least 8 characters and no more than 128 characters. 
-
-- Validation logic is implemented --- Done --- Issac.
+    * Validation logic is implemented --- Done --- Issac.
 
 * WHEN prompted for character types to include in the password, THEN I choose lowercase, uppercase, numeric, and/or special characters. 
-
-- These options are provided in the UI through checkbox controls. --- Done --- Issac.
+    * These options are provided in the UI through checkbox controls. --- Done --- Issac.
 
 * WHEN I answer each prompt, THEN my input should be validated and at least one character type should be selected. 
-
-- Validation logic is implemented in order to ensure that at least one criteria is selected. --- Done --- Issac.
+    * Validation logic is implemented in order to ensure that at least one criteria is selected. --- Done --- Issac.
 
 * WHEN all prompts are answered, THEN a password is generated that matches the selected criteria. 
-
-- When clicking on `Generate` button control, validation logic confirms that user input is as expected, if logic is satisfied a new password is the main screen text box area, if this is not the case a specific error message is displayed. --- Done --- Issac.
+    * When clicking on `Generate` button control, validation logic confirms that user input is as expected, if logic is satisfied a new password is the main screen text box area, if this is not the case a specific error message is displayed. --- Done --- Issac.
 
 * WHEN the password is generated, THEN the password is either displayed in an alert or written to the page. 
-
-- Password is presented in Index.HTML's password area text box. --- Done --- Issac.
+    * Password is presented in Index.HTML's password area text box. --- Done --- Issac.
 
 ### 1.3. Deliverables.
 
 * The URL of the deployed application.
-
-- https://carlosissac.github.io/mod03hwpswdgen/ --- Done --- Issac.
+    * https://carlosissac.github.io/mod03hwpswdgen/ --- Done --- Issac.
 
 * The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- https://github.com/carlosissac/mod03hwpswdgen --- Done, name of the repo is `mod03hwpswdgen`, a new README.md detailing the development process is also provided and displayed.
+    * https://github.com/carlosissac/mod03hwpswdgen --- Done, name of the repo is `mod03hwpswdgen`, a new README.md detailing the development process is also provided and displayed.
 
 ## 2. Features and Comments.
 
