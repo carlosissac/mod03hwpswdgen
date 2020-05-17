@@ -111,9 +111,9 @@ The following section details the development descicion and implementation route
 
 * After demoing the application to one of my developer friends (https://github.com/franknunez23) he gave asked me for an additional challage. 
 
-* The challange was that after the password is successfully provided and the user taps or clicks on the password to copy to clickboard and alert will show up notifying that the password is already on the clipboard.
+* The challange consisted in that after the password is successfully provided and the user taps or clicks on the password to copy to clickboard and alert will show up notifying that the password is already on the clipboard.
 
-* Challange was one upped by myself by making sure that you will only get the copy confirmation and consequently be able to copy to clipboard ONLY when a password is delivered, not when an error message is displayed or placeholder text is showing in the UI.
+* Challange was one upped by myself by making sure that you will only be able get the alert confirmation and consequently ONLY be able to copy to clipboard when a password is delivered, not when an error message is displayed or placeholder text is showing in the UI.
 
 ## 3. Conclusions.
 

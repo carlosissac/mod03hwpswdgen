@@ -171,5 +171,4 @@ function copyTxtArea() {
     document.execCommand('copy');
     alert("New Password Copied to Clipboard");
   }
-
 }
