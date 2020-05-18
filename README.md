@@ -88,6 +88,7 @@ The following section details the development decisions and implementation route
 * The following bootstrap theme was successfully linked https://bootswatch.com/united/.
 
 * Below is an app snapshot detailing the main functionality screen.
+
 ![picture alt](./assets/appui01_index.jpg "index.HTML")
 
 ## 2.3. HTML and CSS.
