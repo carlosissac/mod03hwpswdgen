@@ -65,7 +65,7 @@ The following section details the development decisions and implementation route
 
 * Starter code was not used. Everything was built from scratch.
 
-* App has a main page (index.HTML) where the main password functionality is shown, and an About page with detailed instructions on how to use the app are provided and supporting links are included as well.
+* App has an `index.HTML` where the main password functionality is shown, and an `about.HTML` page where detailed instructions on how to use the app are provided and supporting links are included as well.
 
 * Purpose of including an image and an About page was to ensure that a responsive and functional layout was successfully implemented. This was verified by using different screen sizes and responsive mode in Chrome browser's DevTools.
 
@@ -73,7 +73,7 @@ The following section details the development decisions and implementation route
 
 * Navbar has functioning links, and working Hamburger button.
 
-* Brand button redirects to Index.HTML.
+* Brand button redirects to `index.HTML`.
 
 * Image has an embedded live link to my personal social media.
 
@@ -104,15 +104,15 @@ The following section details the development decisions and implementation route
 
 ## 2.3. JS code.
 
-* File script.JS was provided inside the Assets folder. I'm not entirely sure if this is good practice. Please provide some advice on this.
+* File `script.JS` was provided inside the Assets folder. I'm not entirely sure if this is good practice. Please provide some advice on this.
 
-* Steps required in order to complete the password generation process were pseudo coded before any javascript was written.
+* Steps required in order to complete the password generation process were pseudo coded before any JS Code was written.
 
 * Object oriented design and basic functions was also whiteboarded before any coding actually took place.
 
-* Query selectors were mapped first in order to map components from HTML UI into JS code.
+* Query selectors were coded first in order to map components from HTML UI into `script.JS`.
 
-* Afterwards event listeners were deployed, in order to link Generate and Reset button click actions to genPsswd() and resetForm() functions respectively..
+* Afterwards event listeners were deployed, in order to link Generate and Reset button click actions to `genPsswd()` and `resetForm()` functions respectively..
 
 * Random character generating functions implementation were taken from the following external example https://www.youtube.com/watch?v=duNmhKgtcsI. More specifically we based our approach of generating a random character based on a range of numbers that matched the range of the character codes for the specific password criteria (uppercase, lowercase and numbers) on this example.  
 
@@ -124,9 +124,9 @@ The following section details the development decisions and implementation route
 
 * After demoing the application to one of my developer friends https://github.com/franknunez23 I was asked for an additional challenge. 
 
-* The challenge consisted in that after the password is successfully provided and the user taps or clicks on the password area text box to copy to clipboard an alert must show up notifying that the password is already on the clipboard.
+* Challenge consisted in that after the password is successfully provided and the user taps or clicks on the password area text box to copy to clipboard an alert must show up notifying the user that the password is copied to clipboard.
 
-* Challenge was one upped by myself by making sure that you will only be able get the alert confirmation and consequently ONLY be able to copy to the clipboard when a password is successfully delivered, NOT when an error message is displayed or placeholder text is showing in the UI.
+* Challenge was one upped by myself by making sure that you will only be able get the alert confirmation and consequently `ONLY` be able to copy to the clipboard when a password is successfully delivered, `NOT` when an error message is displayed or placeholder text is showing in the UI.
 
 ## 3. Conclusions.
 
