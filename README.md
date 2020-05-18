@@ -91,9 +91,11 @@ The following section details the development decisions and implementation route
 
 ### 2.2.1 Main Page.
 
-Markup : ![picture alt](./assets/appui01_index.jpg "Title is optional")
+![picture alt](./assets/appui01_index.jpg "index.HTML")
 
 ### 2.2.2. About Page.
+
+![picture alt](./assets/appui02_about.jpg "about.HTML")
 
 ## 2.3. HTML and CSS.
 
