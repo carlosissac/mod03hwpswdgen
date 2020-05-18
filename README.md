@@ -4,7 +4,7 @@ Create an application that will generate a random password, based on user-select
 
 ## 1. Guidelines
 
-User Story and Acceptance Criteria were provided in the original README.md along with starter code and a sample UI in order to get a better sense of what was the target objective of the assignment. All of this input was taken into account when deciding the actual implementation route. Listed below is a review of the input provided for the assignment.
+User Story and Acceptance Criteria were provided in the original `README.md` along with starter code and a sample UI in order to get a better sense of what was the target objective of the assignment. All of this input was taken into account when deciding the actual implementation route. Listed below is a review of the input provided for the assignment.
 
 ### 1.1. Provided User Story.
 
@@ -44,10 +44,14 @@ GIVEN I need a new, secure password:
 - [x] Validation logic is implemented in order to ensure that at least one criteria is selected. --- Issac.
 
 * WHEN all prompts are answered, THEN a password is generated that matches the selected criteria. 
-- [x] When clicking on `Generate` button control, validation logic confirms that user input is as expected, if logic is satisfied a new password is the main screen text box area, if this is not the case a specific error message is displayed. --- Issac.
+- [x] When clicking on `Generate` button control the following steps are followed:
+1. Validation logic confirms that user input is as expected. 
+2. If validation logic `IS` satisfied a new password is providede the main screen text box area. 
+3. If validation logic is `NOT` satisfied a specific error message is displayed. 
+--- Issac.
 
 * WHEN the password is generated, THEN the password is either displayed in an alert or written to the page. 
-- [x] Password is presented in Index.HTML's password area text box. --- Issac.
+- [x] Password is presented in `index.HTML` password area text box. --- Issac.
 
 ### 1.3. Deliverables.
 
@@ -55,7 +59,7 @@ GIVEN I need a new, secure password:
 - [x] https://carlosissac.github.io/mod03hwpswdgen/ --- Issac.
 
 * The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-- [x] https://github.com/carlosissac/mod03hwpswdgen. Name of the repo is `mod03hwpswdgen`, a new README.md detailing the development process is also provided and displayed. --- Issac
+- [x] https://github.com/carlosissac/mod03hwpswdgen. Name of the repo is `mod03hwpswdgen`, a new `README.md` detailing the development process is also provided and displayed. --- Issac
 
 ## 2. Features and Comments.
 
@@ -92,7 +96,7 @@ The following section details the development decisions and implementation route
 
 * Each page has valid and correct HTML. In order to assure compliance the following validator was utilized: https://validator.w3.org/nu/. No errors are found in the final version.
 
-* Style.CSS file is available in the Assets folder and was successfully linked to both Index.HTML and About.HTML.
+* `style.CSS` file is available in the Assets folder and was successfully linked to both `index.HTML` and `about.HTML`.
 
 * `Generate` and `Reset` buttons redirect the focus to the main banner of the UI (this functionality is more noticeable on small or mobile screens). At first we redirected to the Password Area Text Box control, but during usage this was not aesthetically appealing. After redirecting focus to main UI banner this was functionally and aesthetically better.
 
@@ -125,7 +129,7 @@ The following section details the development decisions and implementation route
 
 ## 2.5 Extra Challenge.
 
-* After demoing the application to one of my developer friends https://github.com/franknunez23 I was asked for an additional challenge. 
+* After demoing the application to one of my developer friends (https://github.com/franknunez23). I was asked for an additional challenge. 
 
 * Challenge consisted in the following:
 1. After the password is successfully provided by the app.
