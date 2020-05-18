@@ -83,7 +83,10 @@ The following section details the development decisions and implementation route
 
 * The following bootstrap theme was successfully linked https://bootswatch.com/united/.
 
-## 2.2. HTML and CSS.
+## 2.2. UI Snapshots.
+
+
+## 2.3. HTML and CSS.
 
 * Semantic HTML was used and Alt Tags were included in images.
 
@@ -102,7 +105,7 @@ The following section details the development decisions and implementation route
     * https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js. 
     * https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js.
 
-## 2.3. JS code.
+## 2.4. JS code.
 
 * File `script.JS` was provided inside the Assets folder. I'm not entirely sure if this is good practice. Please provide some advice on this.
 
@@ -120,11 +123,14 @@ The following section details the development decisions and implementation route
 
 * When trying to use the quotation character `"` a back forward slash `\` had to be appended next to it in order to bypass JS reserved word status for quotation character.
 
-## 2.4 Extra Challenge.
+## 2.5 Extra Challenge.
 
 * After demoing the application to one of my developer friends https://github.com/franknunez23 I was asked for an additional challenge. 
 
-* Challenge consisted in that after the password is successfully provided and the user taps or clicks on the password area text box to copy to clipboard an alert must show up notifying the user that the password is copied to clipboard.
+* Challenge consisted in the following:
+    i. After the password is successfully provided by the app.
+    ii. User will tap or click on the password area text box to copy to clipboard.
+    iii. an alert must show up notifying the user that the password is copied to clipboard.
 
 * Challenge was one upped by myself by making sure that you will only be able get the alert confirmation and consequently `ONLY` be able to copy to the clipboard when a password is successfully delivered, `NOT` when an error message is displayed or placeholder text is showing in the UI.
 
