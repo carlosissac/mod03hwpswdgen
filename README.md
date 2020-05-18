@@ -130,7 +130,7 @@ The following section details the development decisions and implementation route
 
 ## 2.5 Extra Challenge.
 
-* After demoing the application to one of my developer friends (https://github.com/franknunez23). I was asked for an additional challenge. 
+* After demoing the application to one of my developer friends (https://github.com/franknunez23) I was asked for an additional challenge. 
 
 * Challenge consisted in the following:
     1. After the password is successfully provided by the app.
