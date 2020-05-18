@@ -44,7 +44,7 @@ GIVEN I need a new, secure password:
 - [x] Validation logic is implemented in order to ensure that at least one criteria is selected. --- Issac.
 
 * WHEN all prompts are answered, THEN a password is generated that matches the selected criteria. 
-- [x] When clicking on `Generate` button control the following steps are followed: --- Issac.
+- [x] Clicking on `Generate` button control does the following: --- Issac.
     1. Validation logic confirms that user input is as expected. 
     2. If validation logic `IS` satisfied a new password is providede the main screen text box area. 
     3. If validation logic is `NOT` satisfied a specific error message is displayed. 
