@@ -133,12 +133,12 @@ The following section details the development decisions and implementation route
 * After demoing the application to one of my developer friends (https://github.com/franknunez23). I was asked for an additional challenge. 
 
 * Challenge consisted in the following:
-1. After the password is successfully provided by the app.
-2. User will tap or click on the password area text box to copy to clipboard.
-3. An alert must show up notifying the user that the password is copied to clipboard.
+    1. After the password is successfully provided by the app.
+    2. User will tap or click on the password area text box to copy to clipboard.
+    3. An alert must show up notifying the user that the password is copied to clipboard.
 
 * Challenge was one upped by myself the following way:
-1. Making sure that you will only be able get the alert confirmation and consequently `ONLY` be able to copy to the clipboard when a password is successfully delivered, `NOT` when an error message is displayed or placeholder text is showing in the UI.
+    1. Making sure that you will only be able get the alert confirmation and consequently `ONLY` be able to copy to the clipboard when a password is successfully delivered, `NOT` when an error message is displayed or placeholder text is showing in the UI.
 
 ## 3. Conclusions.
 
