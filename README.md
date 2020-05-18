@@ -132,7 +132,7 @@ The following page was provided in order to assure responsive design was achieve
 
 * Afterwards event listeners were deployed, in order to link Generate and Reset button click actions to `genPsswd()` and `resetForm()` functions respectively..
 
-* Random character generating functions implementation were taken from the following external example https://www.youtube.com/watch?v=duNmhKgtcsI. More specifically we based our approach of providing a random character based on a range of numbers that matched the range of the browser character codes for the specific password criteria (uppercase, lowercase and numbers) on this example.
+* Random character generating functions implementation were taken from the following external example https://www.youtube.com/watch?v=duNmhKgtcsI. More specifically we based our approach of providing a random character based on a range of numbers that matched the range of the browser character codes for the specific password criteria (uppercase, lowercase and numbers) from this example.
 
 ![picture alt](./assets/charcodes.jpg "Char Codes")
 
@@ -154,6 +154,7 @@ The following page was provided in order to assure responsive design was achieve
 
 ## 3. Conclusions.
 
+Object oriendted design should be the first thing to be taken into account when moving forward with implementation. This will pay off significant dividends during development and will make our separation of concerns easier to estimate, consequently our code will be easier to oragnize, develop and test. 
 
 ## 4. Appreciations.
 
