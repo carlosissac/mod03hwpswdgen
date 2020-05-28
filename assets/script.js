@@ -38,9 +38,9 @@ var generator = {
   validateInput: function() {
       let chk = 0;
       if(Boolean(this.pass_lenght)) {
-        if(Number(this.pass_lenght)){
+        if(Number(this.pass_lenght)) {
             if(!(this.pass_lenght%1)) {
-              if((this.pass_lenght>7)&&(this.pass_lenght<129)){
+              if((this.pass_lenght>7)&&(this.pass_lenght<129)) {
                 chk = Number(this.uppcase_val) + Number(this.lowcase_val) + Number(this.num_val) + Number(this.spec_val);
                 if(chk) { return 0; }
                 else {

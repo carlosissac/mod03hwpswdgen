@@ -49,7 +49,6 @@ GIVEN I need a new, secure password:
     2. If validation logic `IS` satisfied a new password is providede the main screen text box area. 
     3. If validation logic is `NOT` satisfied a specific error message is displayed. 
 
-
 * WHEN the password is generated, THEN the password is either displayed in an alert or written to the page. 
 - [x] Password is presented in `index.HTML` password area text box. --- Issac.
 
@@ -120,7 +119,7 @@ The following section details the development decisions and implementation route
 
 * Query selectors were coded first in order to map components from HTML UI into `script.JS`.
 
-* Afterwards event listeners were deployed, in order to link Generate and Reset button click actions to `genPsswd()` and `resetForm()` functions respectively..
+* Afterwards event listeners were deployed, in order to link Generate and Reset button click actions to `genPsswd()` and `resetForm()` functions respectively.
 
 * Random character generating functions implementation were taken from the following external example https://www.youtube.com/watch?v=duNmhKgtcsI. More specifically I based the approach of providing a random character based on a range of numbers that matched the range of the browser character codes for the specific password criteria (uppercase, lowercase and numbers) from this example.
 
